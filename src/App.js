@@ -1,13 +1,24 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
+import PizzaForm from "./Components/PizzaForm";
 
 const App = () => {
   return (
     <>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-      <Route exact path="/"></Route>
-      <Route path="/pizza"></Route>
+      <p> click here to shop</p>
+      <div>
+        <nav>
+          <ul>
+            <Link to="/"> Home </Link>
+          </ul>
+          <ul>
+            <Link to="/pizza"> Shop </Link>
+          </ul>
+        </nav>
+      </div>
+      <Route exact path="/" />
+      <Route exact path="/pizza" component={PizzaForm} />
     </>
   );
 };
