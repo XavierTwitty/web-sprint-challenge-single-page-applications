@@ -70,7 +70,7 @@ export default function PizzaForm() {
   return (
     <form onSubmit={submitForm}>
       <div>
-        <label htmlfor="name">
+        <label htmlFor="name">
           <h2> name </h2>
           <input
             type="text"
@@ -83,7 +83,7 @@ export default function PizzaForm() {
         </label>
       </div>
       <div>
-        <label htmlfor="size">
+        <label htmlFor="size">
           <h2> select a size</h2>
           <select
             name="size"
@@ -103,26 +103,38 @@ export default function PizzaForm() {
       <div>
         <label htmlFor="toppings">
           <h2>pick a topping</h2>
-          <label htmlfor="pepperoni">
+          <label htmlFor="pepperoni">
             <input
               type="checkbox"
               name="pepperoni"
+              onChange={inputChange}
               value={pizzaForm.pepperoni}
             />
             Pepperoni
           </label>
-          <label htmlfor="onions">
-            <input type="checkbox" name="onions" value={pizzaForm.onions} />
+          <label htmlFor="onions">
+            <input
+              type="checkbox"
+              name="onions"
+              value={pizzaForm.onions}
+              onChange={inputChange}
+            />
             Onions
           </label>
-          <label htmlfor="peppers">
-            <input type="checkbox" name="peppers" value={pizzaForm.peppers} />
+          <label htmlFor="peppers">
+            <input
+              type="checkbox"
+              name="peppers"
+              value={pizzaForm.peppers}
+              onChange={inputChange}
+            />
             Peppers
           </label>
-          <label htmlfor="mushrooms">
+          <label htmlFor="mushrooms">
             <input
               type="checkbox"
               name="mushroom"
+              onChange={inputChange}
               value={pizzaForm.mushrooms}
             />
             Mushrooms
