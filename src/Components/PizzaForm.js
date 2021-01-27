@@ -133,7 +133,7 @@ export default function PizzaForm() {
           <label htmlFor="mushrooms">
             <input
               type="checkbox"
-              name="mushroom"
+              name="mushrooms"
               onChange={inputChange}
               value={pizzaForm.mushrooms}
             />
